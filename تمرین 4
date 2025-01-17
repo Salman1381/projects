@@ -1,0 +1,37 @@
+using System.Runtime.CompilerServices;
+
+namespace تمرین_4
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            //صورت مسئله: سه عدد از کاربر دریافت کنید و بزرگرین عدد چاپ کنید
+            //دریافت عدد اول 
+            Console.Write("enter number1 : ");
+            int var1=int.Parse(Console.ReadLine());
+            //دریافت عدد دوم
+            Console.Write("enter number2 : ");
+            int var2=int.Parse(Console.ReadLine());
+            //دریافت عدد سوم
+            Console.Write("enter number3 : ");
+            int var3=int.Parse(Console.ReadLine());
+            //پیدا کردن عدد بزرگتر از طریق ادستور زیر
+            //اگر عدد اول بزرگتر باشه
+            if (var1 > var2 && var1 > var3)
+            {
+                Console.WriteLine($"max number is : {var1 }");
+            }
+           //اگر عدد دوم بزرگتر باشه
+            if (var2 > var1 && var2 > var3)
+            {
+                Console.WriteLine($"max number is : {var2}");
+            }
+            //اگر عدد سوم بزرگتر باشه
+            if (var3 > var1 &&  var3 > var2)
+            {
+                Console.WriteLine($"max number is : {var3}");
+            }
+
+        }
+    }
