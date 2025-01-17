@@ -1,0 +1,23 @@
+namespace تمرین2
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            //صورت مسئله : عددی از کاربر دریافت کنید و زوج یا فرد بودن ان را نمایش دهید
+            //چاپ یک خروجی برای دریافت عدد از کاربر 
+            Console.Write("please enter a positive number : ");
+            //دریات عدد از کاربر و ذخیرع در یک متغیر
+            int var=int.Parse(Console.ReadLine());
+            //استفاده از دستور برای نمایش عدد فر یا زوج
+            if (var % 2 == 0)
+            {
+                Console.WriteLine("even number");
+            }
+            else
+            {
+                Console.WriteLine("ood number");  
+            }
+        }
+    }
+}
