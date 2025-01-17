@@ -1,0 +1,36 @@
+namespace تمرین5
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            //برنامه ای بنویسید که یک عدد بزرگتر از 100 از کاربر بگیرد و اعداد مضرب 5 اون عدد را چاپ کند 
+            //نمایش خروجی برای گرفتن عدد از کاربر 
+            Console.Write("enter a number greater than 100 : ");
+            int number;
+            //جلو گیری از ورودی اشتباه توسط کاربر
+            while (true)
+            {
+                string number1 = Console.ReadLine();
+                if (int.TryParse(number1, out number) && number > 100)
+                {
+
+                    break;
+                }
+                else
+                {
+                    Console.WriteLine("please enter a number greater than 100");
+                } 
+            
+             }
+            //چاپ خروجی
+                Console.Write($"aaddad masrab 5 ta {5} :");
+
+                for (int i = 5; i < number; i += 5)
+                {
+                    Console.WriteLine(i);
+                }
+            
+        }
+    }
+}
