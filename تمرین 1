@@ -1,0 +1,20 @@
+using System.Diagnostics.CodeAnalysis;
+
+namespace تمرین_1
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            //صورت مسئله :میانیگین دو عدد ده و بیست حساب کنید.  
+            //تعریف متغیر برای مقدار دهی
+            int var = 10;
+            int var2 = 20;
+            int var3 = 2;
+            //انجام عملیات ریاضی و تعریف یک مقدار برای ذخیره
+            int average=(var+var2)/var3;
+            //چاپ خروجی 
+            Console.WriteLine(" {2}  =  average {1} and {0}",var,var2,average);                    
+        }
+    }
+}
