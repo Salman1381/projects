@@ -1,0 +1,24 @@
+namespace تمرین3
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            //صورت مسئله : دریافت عع از کاربر و حساب کردن قدر مطلق ان
+            //چاپ یک چیز برای دریافت عدد از کاربر 
+            Console.Write("enter a number : ");
+            //دریافت عدد از کاربر و ذخیره ان در یک متغیر
+            int var=int.Parse(Console.ReadLine());
+            //استفاده از این دستور ببرای چاپ اعداد 
+            if (var >= 0)
+            {
+            Console.WriteLine("positive");
+            } 
+            if (var <= 0)
+            { 
+            int var1=-var;
+            Console.WriteLine($" the absolute value of the number :{var1} ");
+            }
+        }
+    }
+}
