@@ -1,0 +1,42 @@
+namespace mr_ahmad_zade_project_base
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            //پروژه شماره 13
+            //تعریف ارایه برای ذخیره داده
+            int number1;
+            int number2 = 0;
+            int number3;
+            //چاپ خروجی برای گرفتن تعداد عدد از کاربر
+            Console.Write("mr ahmad zade how many numbers do you want ? ");
+            //استفاده از حلقه برای جلوگیری از ورودی اشتباه توسط کاربر
+            while (!int.TryParse(Console.ReadLine(), out number1) || (number1 <= 0))
+            {
+                Console.Write(" please enter a positive integer ");
+            }
+            //تعریف ارایه برای ذخیره اعداد
+            int[] numbers = new int[number1];
+            //چاپ خروجی برای گرفتن تعداد اعداد مشخص شده توسط کاربر
+                 
+            for (int i = 0; i < number1; i++)
+            {
+                Console.Write($"enter your number {i + 1} : ");
+            //جاوگیری از وارد شدن عدد وارد شده توسط کاربر
+                while (!int.TryParse(Console.ReadLine(), out number3))
+                {
+                    Console.Write("please enter a positive integer");
+                }
+            //جمع اعداد 
+                numbers[i] = number3;
+                number2 += number3;
+            }
+            //محاسبه میانگین
+            int average = number2 / number1;
+            //چاپ خروجی میانگین
+            Console.WriteLine($"the average of the numbers :{average}");
+
+        }
+    }
+}
